@@ -10,8 +10,18 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h> 
+int main() 
+{ 
+    int a=44,b=3; 
+    printf("After Left Shift Operation value of a is:%d",a<<b); 
+}
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/6df81470-7e5f-498f-b039-7f41d986eb5a)
+
 
 
 
@@ -47,9 +57,30 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h>
+int main() 
+{ 
+    int a,b; 
+    scanf("%d%d",&a,&b); 
+    if(a==b) 
+    { 
+        printf("Numbers are Equal");
+        
+    } 
+    else 
+    { 
+        printf("Numbers are not Equal");
+    } 
+    
+} 
+```
 
 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/f5a8c1e4-e044-46b1-a82b-429fe8dcee19)
+
            
 ## RESULT
 
@@ -70,8 +101,25 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h> 
+#include<string.h> 
+#include<ctype.h> 
+int main() 
+{ 
+    char s[50]; 
+    scanf("%s",s); 
+    printf("Lower case String is:"); 
+    for(size_t i=0;i<strlen(s);i++) 
+    printf("%c", tolower((unsigned char) s[i]));
+} 
+
+```
 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/12634fe4-f323-47c5-9cb2-1b29595fb7d6)
+
 
 
 
@@ -95,8 +143,28 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h> 
+#include<string.h> 
+int main() 
+{  
+    char s[50]; 
+    scanf("%[^\n]",s); 
+    int flag=1; 
+    for( int i=0;i<strlen(s);i++) 
+    { 
+        if(s[i]== ' ') 
+        flag++;
+    } 
+    printf("%d",flag); 
+} 
+
+```
 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/ff21655e-7fba-4d21-a6f0-ddefffc770cd)
+
 
 
 
@@ -129,9 +197,33 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
+```#include<stdio.h> 
+int main() 
+{ 
+    char c1[100],c2[100]; 
+    int flag=0,i=0; 
+    scanf("%[^\n]",c1); 
+    scanf("%s",c2); 
+    while(c1[i]!='\0' && c2[i]!='\0') 
+    {
+        if(c1[i]!=c2[i]) 
+        flag=1; 
+        i++; 
+     
+    } 
+    if(flag==0) 
+    printf("strings are same"); 
+    else 
+    printf("strings are not same"); 
+     
+}
+```
 
 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/67742aa4-5fae-4a7f-8c6c-aa9a7bcdd1f6)
+
  
 
 ## RESULT
